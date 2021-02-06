@@ -46,7 +46,8 @@ while (!finished) {
         finished = true;
     } else { // step 2
         if (a >= 2 * b) {
-            a %= (2 * b)
+            a %= (2 * b) // here is the key to be successful in this problem: at first you will try a = a - 2*b, 
+            // but it will take too long to run, you will notice that a %= (2*b) it will reduces the running loops and time execution
         } else { // step 3
             if (b >= 2 * a) {
                 b %= (2 * a)
